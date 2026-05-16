@@ -1,0 +1,13 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+streamlit==1.33.0
+scikit-learn==1.4.2
+sentence-transformers==2.7.0
+faiss-cpu==1.8.0
+vaderSentiment==3.3.2
+numpy==1.26.4
+pandas==2.2.2
+joblib==1.4.0
+python-dateutil==2.9.0
+plotly==5.20.0
+pydantic==2.6.4

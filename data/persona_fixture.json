@@ -1,0 +1,209 @@
+{
+  "user_id": "user_42",
+  "persona_name": "Arjun",
+  "sessions": [
+    {
+      "day": 1,
+      "date": "2024-01-01",
+      "messages": [
+        {
+          "id": "d1_m1",
+          "timestamp": "2024-01-01T09:15:00",
+          "text": "I would like to set a reminder for my project submission deadline on Friday. Please ensure it is noted properly.",
+          "topics": ["work", "deadline", "reminder"],
+          "people_mentioned": []
+        },
+        {
+          "id": "d1_m2",
+          "timestamp": "2024-01-01T09:45:00",
+          "text": "Could you help me understand how transformer attention mechanisms differ from traditional RNNs? I find this quite fascinating.",
+          "topics": ["learning", "ml", "curiosity"],
+          "people_mentioned": []
+        },
+        {
+          "id": "d1_m3",
+          "timestamp": "2024-01-01T10:30:00",
+          "text": "I appreciate the explanation. It would be helpful if you could provide structured notes on this topic for future reference.",
+          "topics": ["learning", "organisation"],
+          "people_mentioned": []
+        }
+      ],
+      "ground_truth_mood": "curious",
+      "ground_truth_tone": "formal",
+      "drift_trigger": null
+    },
+    {
+      "day": 2,
+      "date": "2024-01-02",
+      "messages": [
+        {
+          "id": "d2_m1",
+          "timestamp": "2024-01-02T11:00:00",
+          "text": "My sister called last night. She said she's doing really well in her new job at the hospital. Proud of her honestly.",
+          "topics": ["family", "sister", "positive"],
+          "people_mentioned": ["sister"]
+        },
+        {
+          "id": "d2_m2",
+          "timestamp": "2024-01-02T11:20:00",
+          "text": "Can you add a reminder — call sister this weekend. She mentioned she wants to catch up properly.",
+          "topics": ["family", "reminder", "sister"],
+          "people_mentioned": ["sister"]
+        },
+        {
+          "id": "d2_m3",
+          "timestamp": "2024-01-02T14:00:00",
+          "text": "Going through some ML papers today. The retrieval augmented generation paper is quite interesting, though dense.",
+          "topics": ["learning", "research", "rag"],
+          "people_mentioned": []
+        }
+      ],
+      "ground_truth_mood": "warm",
+      "ground_truth_tone": "slightly_casual",
+      "drift_trigger": "positive family interaction"
+    },
+    {
+      "day": 3,
+      "date": "2024-01-03",
+      "messages": [
+        {
+          "id": "d3_m1",
+          "timestamp": "2024-01-03T08:30:00",
+          "text": "Ugh, the standup ran way too long again. Three hours of meetings and I got nothing done. This is exhausting.",
+          "topics": ["work", "frustration", "meetings"],
+          "people_mentioned": []
+        },
+        {
+          "id": "d3_m2",
+          "timestamp": "2024-01-03T12:00:00",
+          "text": "remind me to push the PR before 5pm. also pick up groceries. idk in what order lol",
+          "topics": ["work", "reminder", "personal"],
+          "people_mentioned": []
+        },
+        {
+          "id": "d3_m3",
+          "timestamp": "2024-01-03T17:30:00",
+          "text": "deadline got moved up by two days. manager just dropped it casually like it's nothing. so tired.",
+          "topics": ["work", "stress", "deadline"],
+          "people_mentioned": ["manager"]
+        }
+      ],
+      "ground_truth_mood": "stressed",
+      "ground_truth_tone": "casual",
+      "drift_trigger": "work overload + shifted deadline"
+    },
+    {
+      "day": 4,
+      "date": "2024-01-04",
+      "messages": [
+        {
+          "id": "d4_m1",
+          "timestamp": "2024-01-04T09:00:00",
+          "text": "still behind on the project. not really sure what to prioritise. feels like everything is on fire.",
+          "topics": ["work", "frustration", "overwhelm"],
+          "people_mentioned": []
+        },
+        {
+          "id": "d4_m2",
+          "timestamp": "2024-01-04T11:00:00",
+          "text": "can u just list out my pending tasks from this week? i've lost track completely",
+          "topics": ["tasks", "action-item", "overwhelm"],
+          "people_mentioned": []
+        },
+        {
+          "id": "d4_m3",
+          "timestamp": "2024-01-04T15:00:00",
+          "text": "honestly kind of dreading tomorrow's review. my manager is really hard to please and i never know what he wants",
+          "topics": ["work", "anxiety", "manager"],
+          "people_mentioned": ["manager"]
+        }
+      ],
+      "ground_truth_mood": "frustrated",
+      "ground_truth_tone": "casual",
+      "drift_trigger": "accumulated work stress + manager anxiety"
+    },
+    {
+      "day": 5,
+      "date": "2024-01-05",
+      "messages": [
+        {
+          "id": "d5_m1",
+          "timestamp": "2024-01-05T10:00:00",
+          "text": "I had a long argument with my sister last night. She's been really distant lately and snapped at me over something small. Not sure what's going on with her.",
+          "topics": ["family", "sister", "conflict", "negative"],
+          "people_mentioned": ["sister"]
+        },
+        {
+          "id": "d5_m2",
+          "timestamp": "2024-01-05T10:30:00",
+          "text": "review actually went ok. manager was decent for once. maybe things are settling.",
+          "topics": ["work", "relief", "manager"],
+          "people_mentioned": ["manager"]
+        },
+        {
+          "id": "d5_m3",
+          "timestamp": "2024-01-05T14:00:00",
+          "text": "set a reminder to check in with sister next week. something feels off.",
+          "topics": ["family", "sister", "reminder"],
+          "people_mentioned": ["sister"]
+        }
+      ],
+      "ground_truth_mood": "mixed",
+      "ground_truth_tone": "reflective",
+      "drift_trigger": "family conflict after work stress eased"
+    },
+    {
+      "day": 6,
+      "date": "2024-01-06",
+      "messages": [
+        {
+          "id": "d6_m1",
+          "timestamp": "2024-01-06T10:00:00",
+          "text": "taking the weekend off completely. no work, no ML papers, nothing",
+          "topics": ["rest", "personal", "boundary"],
+          "people_mentioned": []
+        },
+        {
+          "id": "d6_m2",
+          "timestamp": "2024-01-06T14:00:00",
+          "text": "watched a ridiculous amount of youtube today. zero regrets honestly",
+          "topics": ["leisure", "humour"],
+          "people_mentioned": []
+        }
+      ],
+      "ground_truth_mood": "relaxed",
+      "ground_truth_tone": "casual",
+      "drift_trigger": "intentional rest after stressful week"
+    },
+    {
+      "day": 7,
+      "date": "2024-01-07",
+      "messages": [
+        {
+          "id": "d7_m1",
+          "timestamp": "2024-01-07T09:00:00",
+          "text": "ok wait hear me out — what if I just automated my entire morning routine with a script lmao",
+          "topics": ["humour", "automation", "personal"],
+          "people_mentioned": []
+        },
+        {
+          "id": "d7_m2",
+          "timestamp": "2024-01-07T10:30:00",
+          "text": "btw my sister texted me — turns out she just started therapy and she's doing better. I feel relieved honestly. we talked properly for the first time in a while.",
+          "topics": ["family", "sister", "positive", "relief"],
+          "people_mentioned": ["sister"]
+        },
+        {
+          "id": "d7_m3",
+          "timestamp": "2024-01-07T12:00:00",
+          "text": "new week tomorrow, feeling weirdly optimistic. maybe I'll actually finish the side project lol",
+          "topics": ["optimism", "personal", "humour"],
+          "people_mentioned": []
+        }
+      ],
+      "ground_truth_mood": "playful",
+      "ground_truth_tone": "casual",
+      "drift_trigger": "rest + family resolution"
+    }
+  ]
+}
