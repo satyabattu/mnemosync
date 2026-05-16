@@ -1,0 +1,4 @@
+classifier/model/intent_model.pkl
+data/memory.db
+__pycache__/
+*.pyc
