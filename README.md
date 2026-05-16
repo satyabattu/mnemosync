@@ -142,6 +142,6 @@ from SQLite — prevents index/database divergence.
 
 ## Demo
 
-Hosted: 
+Hosted: https://huggingface.co/spaces/satyeaaa/mnemosync
 Loom: 
 
